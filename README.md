@@ -1,7 +1,7 @@
 Wordpress with docker compose
 
 Here docker compose is used to set up wordpress in a docker container using docker volumes and bridge network.
-
+```sh
 services:
   database:
     image: mysql:5.7
@@ -33,7 +33,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
     networks:
       - wp-net
-
+```
 ## Environment Variables
 
 #### MYSQL_ROOT_PASSWORD
